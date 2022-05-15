@@ -19,4 +19,9 @@ public class MyConfigurationBean {
     public MyBeanWithDEpendency beanOperationOperationWithDependency(MyOperation myOperation){
         return new MyBeanWithDependencyImplement(myOperation);
     }
+
+    @Bean
+    public MyDependency beanOperationOperationDependency(){
+        return new MyDependencyImplement();
+    }
 }
